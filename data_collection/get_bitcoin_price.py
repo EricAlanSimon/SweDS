@@ -1,22 +1,23 @@
-# data_collection/get_bitcoin_price.py
-
 import requests
 import pandas as pd
 from datetime import datetime
 
-# Define the URL for the Binance API
-binance_url = "https://api.binance.com/api/v3/ticker/price"
-symbol = "BTCUSDT"  # This represents the BTC to USD trading pair
+# Define the URL for the CoinGecko API
+coingecko_url = "https://api.coingecko.com/api/v3/simple/price"
+params = {
+    "ids": "bitcoin", 
+    "vs_currencies": "usd"
+}
 
-# Send a request to the API
-response = requests.get(binance_url, params={"symbol": symbol})
+# Send a request to the CoinGecko API
+response = requests.get(coingecko_url, params=params)
 
 # Check if the response is successful
 if response.status_code == 200:
     data = response.json()
 
     # Extract relevant data (price and time)
-    price = float(data['price'])
+    price = float(data['bitcoin']['usd'])
     timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 
     # Save the data to a CSV file
