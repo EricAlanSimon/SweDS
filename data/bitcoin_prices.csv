@@ -1,1 +1,2 @@
-timestamp,btc_usd_price,btc_eur_price,btc_jpy_price,btc_gbp_price
+timestamp,btc_usd_price,btc_eur_price,btc_jpy_price,btc_gbp_price,btc_brl_price,btc_vnd_price,btc_aed_price,btc_rub_price,btc_ngn_price,btc_cny_price,btc_inr_price,btc_krw_price
+2024-09-12 19:29:49,58056.0,52418.0,8219197.0,44223.0,326694.0,1427496045.0,213241.0,5178457.0,96108639.0,413250.0,4872798.0,77625790.0
