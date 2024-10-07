@@ -11,7 +11,7 @@ Below is current summary of my notebook testing -- intend to transfer it off col
 
 **Project Objective**
 
-The goal of this project is to create a machine learning model to predict internal hemorrhage in patients using time-series lab test data from the MIMIC-IV database. By analyzing lab measurements over the first 48 hours of hospital admission, the model aims to help clinicians detect and intervene early for patients at risk of hemorrhage.
+The goal of this project is to create a machine learning model to predict internal hemorrhage in patients using time-series lab test data from the MIMIC-IV database. By analyzing lab measurements over the first 48 hours of hospital admission, the model aims to help clinicians detect and intervene early for patients at risk of hemorrhage. This is relevant to an undergraduate hemorrhage project I had, so I want to try to take a ML approach to it.
 
 ---
 
@@ -58,7 +58,7 @@ The goal of this project is to create a machine learning model to predict intern
 
 ---
 
-**Modeling Approach**
+**Current Modeling**
 
 1. **Model Selection**:
    - Used a **Long Short-Term Memory (LSTM)** neural network to model the sequential time-series data.
@@ -73,16 +73,3 @@ The goal of this project is to create a machine learning model to predict intern
    - Optimizer: Adam with a learning rate of 0.001.
    - Metrics: Accuracy monitored during 10 epochs with a batch size of 32.
 
----
-
-**Model Evaluation**
-
-1. **Performance Metrics**:
-   - **Accuracy**: Measured the proportion of correct predictions.
-   - **AUC-ROC**: Evaluated the model's ability to distinguish between classes.
-   - **Confusion Matrix**: Assessed true positives, false positives, true negatives, and false negatives.
-   - **Classification Report**: Provided precision, recall, F1-score, and support for each class.
-
-2. **Results Visualization**:
-   - Plotted training and validation accuracy/loss over epochs to assess convergence and overfitting.
-   - Visualized the ROC curve to show the trade-off between true positive and false positive rates.
