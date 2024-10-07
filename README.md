@@ -15,6 +15,14 @@ The goal of this project is to create a machine learning model to predict intern
 
 ---
 
+**Goals:**
+
+By Oct. 25: Train an LSTM on the full dataset (not just a subset as right now) and host via GoogleCloud
+
+By Nov. 15: Have live simulation of patient data and a live hemorrhage risk score.
+
+---
+
 **Data Source**
 
 - **MIMIC-IV Database**: A publicly available dataset with de-identified health-related data from intensive care unit patients.
